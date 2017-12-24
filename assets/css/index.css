@@ -20,6 +20,11 @@ html, body {
   float: right;
 }
 
+.navbar-item:hover, .novbar-special-item:hover {
+  background-color: #05b9e6;
+  transition: all, ease, 1s;
+}
+
 .navbar-special-item {
   font-weight: 500;
   color: white;
