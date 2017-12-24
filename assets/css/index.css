@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,1000");
 @import url("https://fonts.googleapis.com/css?family=Open Sans:100,200,300,400,500,600,700,800,900,1000");
 
+html, 
 body {
   font-family: "Open Sans";
   font-weight: 500;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0px;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
 }
 
 .navbar-item {
