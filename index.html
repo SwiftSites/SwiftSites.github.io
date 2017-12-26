@@ -16,10 +16,10 @@
     <div class="start">
         <div class="navbar-container">
             <div class="navbar-special-item" style="display:none;">
-                Swift Sites
+              <a href="https://swiftsites.tk">Swift Sites</a>
             </div>
             <div class="navbar-item" style="display:none;">
-                About
+              <a href="#about">About</a>
             </div>
             <div class="navbar-item" style="display:none;">
                 Contact
@@ -39,5 +39,17 @@
     <!-- <div class="secondPage" id="secondPage" onscroll='Animation();'>
       <div class="content">Lotrmfksjfd;kgjsfd kj;skdfjgskj;sgkjd;kj kjfg ;slkjfg skdjf slkdfjg ;skjfg sldjfg ;slkdjf gslkdjf slkdjfgsdkjfgsjdf;gj </div>
     </div> -->
+    <div id="info"></div>
+    <script>
+      function load() {
+      if (location.hash==="#about") {
+          document.getElementsByTagName("info").innerHTML="SwiftSites is a company that helps make websites (or something like that... IDK XD).";
+          }
+        if(location.hash==="") {
+        document.getElementsByTagName("info").innerHTML="";
+        }
+      }
+    var interval = setInterval(load,10);
+    </script>
   </body>
 </html>
