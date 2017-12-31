@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+header {
+    min-height: 700px;
+    background-color: rgb(0, 17, 43);
+    color: rgba(255,255,255,.87);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 300%;
+    margin: 7px;
+}
+
+h2 {
+    font-size: 220%;
+}
+
+nav {
+    background-color: white;
+    color: rgba(0,0,0,.87);
+    padding: 15px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+}
+
+nav .right {
+    float: right;
+}
+
+nav a {
+    color: rgba(0,0,0,.87);
+    text-decoration: none;
+    padding: 10px;
+}
+
+*[title] {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.content, section {
+    max-width: 500px;
+    margin: 20px auto;
+    margin-top: 0;
+    padding-top: 150px;
+    text-align: center;
+}
+
+section {
+    padding-top: 40px;
+    max-width: 700px;
+}
+
+h5 b {
+    color: red;
+}
+
+.button, input[type=submit] {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 2px;
+    margin: 6px 8px;
+    color: hsla(0,0%,100%,.87);
+    background-color: #FFC400;
+    transition: 0.3s;
+    box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+    border: none;
+    text-decoration: none;
+}
+
+.button.alt-discord {
+    background-color: #7289da;
+}
+
+.button.alt-email {
+    background-color: #ea4335;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    width: 180px;
+    height: 240px;
+    flex: 0 0 180px;
+    background-color: #fefefe;
+    box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+    padding: 15px;
+    margin: 15px;
+}
+
+.card img {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 130%;
+}
+
+.card i:not(.material-icons) {
+    font-size: 90%;
+}
+
+.card i.material-icons {
+    color: #FDD835;
+}
+
+
+.card-2 {
+    flex: 0 0 280px;
+    position: relative;
+    padding-bottom: 70px;
+    box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 2px 2px rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12);
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.card-2 .footer {
+    vertical-align: bottom;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+}
+.card-2 .title {
+    background-color: #3949AB;
+    padding: 44px;
+    font-size: 200%;
+    color: rgba(255,255,255,.87);
+    text-align: left;
+}
+
+.card-2 .title .timestamp {
+    font-size: 50%;
+    color: rgba(255,255,255,.56);
+}
+
+.card-2 .title.large {
+    padding: 55px 22px 22px 22px;
+}
+
+.card-2 .content {
+    padding: 22px;
+    color: rgba(0,0,0,.87);
+    margin-bottom: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.card-2 .footer {
+    background-color: #f5f5f5;
+    padding: 22px;
+    color: rgba(0,0,0,.56);
+}
+
+.card-2 .footer a {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: rgba(0,0,0,.78);
+    float: right;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+a.helper {
+    color: rgba(0,0,0,.56) !important;
+    position: relative;
+    top: 2px;
+}
+
+.card-2 .footer span {
+    vertical-align: middle;
+}
+
+.card-2 .footer .material-icons {
+    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
+}
+
+
+form {
+    width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+input[type="text"], input[type="url"], input[type=number], textarea {
+    width: 400px;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,.78);
+    color: rgba(0,0,0,.87);
+    transition: .3s;
+    background-color: transparent;
+    font: 400 16px 'Roboto';
+}
+
+input[type="text"]:focus, input[type="url"]:focus, input[type=number]:focus, textarea:focus {
+    border-bottom: 2px solid #7289da;
+    outline: none;
+}
+
+input[type=checkbox] {
+    margin: 7px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+}
+
+select {
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    background-color: #f5f5f5;
+    outline: none;
+    margin: 5px 0;
+}
+
+h3.label {
+    padding-top: 20px;
+    margin: 0;
+    color: rgba(0,0,0,.56);
+    font-size: 20px;
+    text-align: left;
+}
+
+h3.label b {
+    color: #f04747;
+}
+
+h4.helper {
+    margin: 0;
+    padding: 8px 0;
+    color: rgba(0,0,0,.56);
+    font-size: 14px;
+    text-align: left;
+}
+
+footer {
+    background-color: rgb(35,39,42);
+    color: rgba(255,255,255,.87);
+    padding: 15px;
+    margin-top: 100px;
+}
+
+footer .right {
+    float: right;
+}
+
+footer a {
+    color: rgba(255,255,255,.87);
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+    nav .right a:not(.button) {
+        display: none;
+    }
+
+    footer .right {
+        float: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+    .card-2 {
+        flex: 0 1 100%;
+    }
+}

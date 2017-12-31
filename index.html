@@ -1,55 +1,290 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SwiftSites - Home</title>
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>SwiftSites - Modern, handcrafted websites</title>
+    <link rel="stylesheet" href="./assets/css/new.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="icon" href="./assets/images/logo.png" type="image/png" sizes="16x16 32x32">
-    <script src="./assets/js/scripts.js"> </script>
     <meta charset="UTF-8">
-    <meta name="description" content="A comptany that will build your website/Create your branding.">
+    <meta name="description" content="Creating modern, hand-made websites that help bring messages to your customers.">
     <meta name="keywords" content="HTML,CSS,website,JavaScript,store,build,homepage">
     <meta name="author" content="SwiftSites">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   </head>
-  <body onload="animate()">
-    <div class="start">
-        <div class="navbar-container">
-            <div class="navbar-special-item" style="display:none;">
-                Swift Sites
-            </div>
-            <div class="navbar-item" style="display:none;">
-                About
-            </div>
-            <div class="navbar-item" style="display:none;">
-                Contact
-            </div>
-            <div class="navbar-item" style="display:none;">
-                Order
-            </div>
-            <div class="navbar-item" style="display:none;">
-                Testimonials
-            </div>
-        </div>
-      <div class="main">
-        <div class="title" style="display:none;font-weight:900;"><i>Swift</i>&nbsp;Sites</div>
-        <div class="subtitle" style="display:none;">Where your business starts...</div>
-      </div>
-    </div>
-    <div class="secondPage" id="secondPage" onscroll='Animation();'>
-      <div class="content">
-        <h2>Hello there!</h2>
-        Welcome to SwiftSites!
-        Here is where the smart people go to get there site made fast and cheap by professional programmers.
-        If you are not already using SwiftSites for your online presence then why not start today?!
-        <br><br>
-        <h2>Why us</h2>
-        <ol>
-          <li>We are <b>cheap</b>! <i>Usually it will cost you $5k but here it can cost less than $500!</i></li>
-          <li>We are <b>fast</b>! <i>It could take years for someone to make your site but here it only takes a few months (or less)!</i></li>
-          <li>We are <b>the best</b>! <i>We are the best at developing responsive sites!</i></li>
-        </ol>
-      </div>
-    </div>
+  <body>
+      <a name="top"></a>
+      <nav>
+          <span>SwiftSites</span>
+          <span class="right">
+              <a href="about.html">About</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#themes">Themes</a>
+              <a href="#pricing" class="button">Get Started</a>
+          </span>
+      </nav>
+      <header>
+          <div class="content">
+              <h2 title>SwiftSites</h2>
+              <h1>Crafting modern, hand-made websites</h1>
+              <h4 title style="margin-top:0">Tell your customers something</h4>
+              <br>
+              <a class="button" href="#pricing">Get Started</a>
+          </div>
+      </header>
+      <section>
+          <h1>Make your site something more</h1>
+          <h3>We offer a range of website themes and custom site designs for any type of site</h3>
+      </section>
+      <!-- Themes -->
+      <section>
+          <a name="themes"></a>
+          <h2>Lots of customizable themes</h2>
+          <div class="flex">
+              <div class="card-2">
+                  <div class="title large" style="background:url(assets/images/rust.jpg) no-repeat center center;background-size:cover;">
+                      Rust
+                  </div>
+                  <div class="content">
+                      A more traditional website theme, better for websites with any amount of text.
+                      Easily integrate articles and forms into your site.
+
+                      </article>
+                  </div>
+                  <div class="footer">
+                      $80
+                      <a>Preview</a>
+                  </div>
+              </div>
+              <div class="card-2">
+                  <div class="title large" style="background:url(assets/images/flow.jpg) no-repeat center center;background-size:cover;">
+                      Flow
+                  </div>
+                  <div class="content">
+                      A simplistic, material website design, specially for blogs.
+                      Feature important subjects on your site with resizable cards.
+                  </div>
+                  <div class="footer">
+                      $60
+                      <a>Preview</a>
+                  </div>
+              </div>
+              <div class="card-2">
+                  <div class="title large" style="background:linear-gradient(135deg, #ff6600, #ff0066);">
+                      Burst
+                  </div>
+                  <div class="content">
+                      A minimalist web design theme that works well with sites that don't need a lot of content on them.
+                  </div>
+                  <div class="footer">
+                      $45
+                      <a>Preview</a>
+                  </div>
+              </div>
+          </div>
+          <div class="flex">
+              <div class="card-2">
+                  <div class="title large" style="background:url(assets/images/gloss.jpg) no-repeat top center;background-size:cover;">
+                      Gloss
+                  </div>
+                  <div class="content">
+                      A general theme with lots of lines and angles.
+                      Good for use with any type of website, with lots of spaces for available content.
+                  </div>
+                  <div class="footer">
+                      $65
+                      <a>Preview</a>
+                  </div>
+              </div>
+              <div class="card-2">
+                  <div class="title large" style="background:url(assets/images/raspberry.jpg) no-repeat center center;background-size:cover;">
+                      Raspberry
+                  </div>
+                  <div class="content">
+                      A colorful theme that showcases bright colors with a central space for content.
+                      This theme is mainly for blogs, but works well with any kind of site.
+                  </div>
+                  <div class="footer">
+                      $75
+                      <a>Preview</a>
+                  </div>
+              </div>
+              <div class="card-2">
+                  <div class="title large" style="background:url(assets/images/mercury.jpg) no-repeat center center;background-size:cover;">
+                      Mercury
+                  </div>
+                  <div class="content">
+                      A bright, minimalist web design theme that showcases three cards with a picture and topic on them.
+                      This design works well for landing pages.
+                  </div>
+                  <div class="footer">
+                      $45
+                      <a>Preview</a>
+                  </div>
+              </div>
+          </div>
+          <h5><i><b>*</b>Payments accepted in USD, Bitcoin, and Etherium. When paying with cryptocurrencies, a 5% service charge will be added to your bill.</i></h5>
+      </section>
+      <!-- Reviews -->
+      <section>
+          <h2>People like what we do</h2>
+          <div class="flex">
+              <div class="card">
+                  <img src="https://image.flaticon.com/icons/svg/234/234679.svg">
+                  <h3>James K</h3>
+                  <span>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                  </span>
+                  <i>
+                      SwiftSites made me a great looking website in no time!
+                      If you are looking for a modern stylish website, SwiftSites
+                      is perfect for you!
+                  </i>
+              </div>
+              <div class="card">
+                  <img src="https://image.flaticon.com/icons/svg/236/236832.svg">
+                  <h3>Mason B</h3>
+                  <span>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                  </span>
+                  <i>
+                      SwiftSites made me a great looking website in no time!
+                      If you are looking for a modern stylish website, SwiftSites
+                      is perfect for you!
+                  </i>
+              </div>
+              <div class="card">
+                  <img src="https://image.flaticon.com/icons/svg/234/234695.svg">
+                  <h3>June C</h3>
+                  <span>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                      <i class="material-icons">star</i>
+                  </span>
+                  <i>
+                      SwiftSites made me a great looking website in no time!
+                      If you are looking for a modern stylish website, SwiftSites
+                      is perfect for you!
+                  </i>
+              </div>
+          </div>
+      </section>
+      <section>
+          <a name="pricing"></a>
+          <h1>Affordable and fully-featured</h1>
+          <h3>Not satisfied? You can always get your money back.</h3>
+          <div class="flex">
+              <div class="card-2">
+                  <div class="title large" style="background:url(assets/images/theme-site.jpg) no-repeat center center;background-size:cover;">
+                      Website Themes
+                  </div>
+                  <div class="content">
+                      Choose one of our existing themes from above, and we'll create a site for you with the theme of your choice.
+                  </div>
+                  <div class="footer">
+                      From $45
+                      <a href="#calc">Calculate Price</a>
+                  </div>
+              </div>
+              <div class="card-2">
+                  <div class="title large" style="background:url(assets/images/custom-site.jpg) no-repeat center center;background-size:cover;">
+                      Custom Hand-crafted Website
+                  </div>
+                  <div class="content">
+                      We'll custom-design a website for you with any styling that you want. You can customize it and tweak it any way that you want.
+                  </div>
+                  <div class="footer">
+                      From $90
+                      <a href="#calc">Calculate Price</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section>
+          <a name="calc"></a>
+          <h2>Estimate website cost</h2>
+          <form>
+              <h3 class="label">Choose a site style</h3>
+              <select id="theme">
+                  <option value="custom">Custom</option>
+                  <option disabled>&mdash;</option>
+                  <option value="burst">Burst</option>
+                  <option value="flow">Flow</option>
+                  <option value="gloss">Gloss</option>
+                  <option value="mercury">Mercury</option>
+                  <option value="raspberry">Raspberry</option>
+                  <option value="rust">Rust</option>
+              </select>
+              <h4 class="helper">Select 'Custom' if you want a custom site</h4>
+              <h3 class="label"><input type="checkbox" name="branding"></input> Remove SwiftSites branding <sup>Add $5</sup></h3>
+             <h3 class="label"><input type="checkbox" name="email"></input> Add RainLoop email <sup>Add $10</sup></h3>
+             <h3 class="label"><input type="checkbox" name="ssl"></input> Add SSL certificate <sup>Add $5</sup></h3>
+             <h3 class="label">Amount of pages</h3>
+             <input type="number" min="1" max="100" required name="pagecnt"></input>
+             <h4 class="helper">First 3 pages are included, add $5 for each additional page</h4>
+             <br>
+             <script>
+             function updatePagePrice() {
+                 var price = 0;
+                 if (document.getElementsByName("branding")[0].checked) {price += 5};
+                 if (document.getElementsByName("email")[0].checked) {price += 10};
+                 if (document.getElementsByName("ssl")[0].checked) {price += 5};
+                 switch (document.getElementById("theme").value) {
+                    case "burst":
+                    price += 45;
+                    break;
+                    case "flow":
+                       price += 60;
+                       break;
+                    case "rust":
+                       price += 80;
+                       break;
+                    case "gloss":
+                       price += 65;
+                       break;
+                    case "raspberry":
+                       price += 75;
+                       break;
+                    case "mercury":
+                       price += 45;
+                       break;
+                    case "custom":
+                       price += 90;
+                       break;
+                    default:
+                        break;
+                 }
+                 var pageCost = (parseInt(document.getElementsByName("pagecnt")[0].value) - 3) * 5
+                 if (pageCost > 0) {price += pageCost};
+                 document.getElementById("price").innerHTML = price;
+             }
+             </script>
+             <a class="button" onclick="updatePagePrice()">Update Price</a>
+             <h2>Estimated Total<br>$<span id="price">0</span></h2>
+          </form>
+          <br>
+          <h1>Ready to make your site something great?</h1>
+          <h3>Get in touch with us and we'll work with you to get the best website.</h3>
+          <p>
+              <a class="button alt-email" href="mailto:support@mail.swiftsites.today">Email</a>
+              <a class="button alt-discord" href="">Discord</a>
+          </p>
+      </section>
+      <footer>
+          <span>Copyright &copy; 2017 SwiftSites</span>
+          <span class="right">
+              <a href="#top">Back to Top</a>
+          </span>
+      </footer>
   </body>
 </html>
