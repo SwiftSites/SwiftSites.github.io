@@ -125,7 +125,7 @@
           </div>
     <div class="flex">
               <div class="card-2">
-                  <div class="title large" style="background:url(assets/images/burst.jpg) no-repeat top center;background-size:cover;">
+                  <div class="title large" style="background-color:purple no-repeat top center;background-size:cover;">
                       Drop
                   </div>
                   <div class="content">
@@ -239,6 +239,7 @@
                   <option value="mercury">Mercury</option>
                   <option value="raspberry">Raspberry</option>
                   <option value="rust">Rust</option>
+                  <option value="drop">Drop</option>
               </select>
               <h4 class="helper">Select 'Custom' if you want a custom site</h4>
               <h3 class="label"><input type="checkbox" name="branding"></input> Remove SwiftSites branding <sup>Add $5</sup></h3>
@@ -275,6 +276,9 @@
                        break;
                     case "custom":
                        price += 90;
+                       break;
+                    case "drop":
+                       price += 85;
                        break;
                     default:
                         break;
