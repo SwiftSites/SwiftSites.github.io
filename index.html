@@ -148,7 +148,7 @@
                   </div>
               </div>
               <div class="card-2">
-                  <div class="title large" style="background-color:url(assets/images/minecraft.jpg) no-repeat center center;background-size:cover;">
+                  <div class="title large" style="background:url(assets/images/minecraft.jpg) no-repeat center center;background-size:cover;">
                       Minecraft
                   </div>
                   <div class="content">
@@ -308,10 +308,7 @@
                    case "minecraft":
                         price += 85;
                      break;
-                   case "blacknwhite":
-                        price += 45;
-                     break;
-                    default:
+                   default:
                         break;
                  }
                  var pageCost = (parseInt(document.getElementsByName("pagecnt")[0].value) - 3) * 5
