@@ -6,5 +6,5 @@ We're a small group of artists and developers who love the open web.
 
 #### Contact Us
 - Email support@mail.swiftsites.today
-- Join [the server](https://discordapp.com/invite/HXpYhZb)
+- Join [our discord](https://discordapp.com/invite/HXpYhZb)
 - ~~send us a postcard~~
