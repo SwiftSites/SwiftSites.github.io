@@ -22,7 +22,7 @@
     }
     </script>
   </head>
-  <body>
+  <body onload="updatePagePrice()">
       <a name="top"></a>
       <nav>
           <span>SwiftSites</span>
@@ -253,7 +253,7 @@
           <h2>Estimate website cost</h2>
           <form>
               <h3 class="label">Choose a site style</h3>
-              <select id="theme">
+              <select id="theme" onchange="updatePagePrice()">
                   <option value="custom">Custom</option>
                   <option disabled>&mdash;</option>
                   <option value="burst">Burst</option>
@@ -266,11 +266,11 @@
                   <option value="minecraft">Minecraft</option>
               </select>
               <h4 class="helper">Select 'Custom' if you want a custom site</h4>
-              <h3 class="label"><input type="checkbox" name="branding"></input> Remove SwiftSites branding <sup>Add $5</sup></h3>
-             <h3 class="label"><input type="checkbox" name="email"></input> Add RainLoop email <sup>Add $10</sup></h3>
-             <h3 class="label"><input type="checkbox" name="ssl"></input> Add SSL certificate <sup>Add $5</sup></h3>
+              <h3 class="label"><input type="checkbox" name="branding" onclick="updatePagePrice()"></input> Remove SwiftSites branding <sup>Add $5</sup></h3>
+             <h3 class="label"><input type="checkbox" name="email" onclick="updatePagePrice()"></input> Add RainLoop email <sup>Add $10</sup></h3>
+             <h3 class="label"><input type="checkbox" name="ssl" onclick="updatePagePrice()"></input> Add SSL certificate <sup>Add $5</sup></h3>
              <h3 class="label">Amount of pages</h3>
-             <input type="number" min="1" max="100" required name="pagecnt"></input>
+             <input type="number" min="1" max="100" required name="pagecnt" value="3" oninput="updatePagePrice()"></input>
              <h4 class="helper">First 3 pages are included, add $5 for each additional page</h4>
              <br>
              <script>
