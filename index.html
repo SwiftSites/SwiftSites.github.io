@@ -165,57 +165,57 @@
       </section>
       <!-- Reviews -->
       <section>
-          <h2>People like what we do</h2>
-          <div class="flex">
-              <div class="card">
-                  <img src="https://image.flaticon.com/icons/svg/234/234679.svg">
-                  <h3>James K</h3>
-                  <span>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                  </span>
-                  <i>
-                      SwiftSites made me a great looking website in no time!
-                      If you are looking for a modern stylish website, SwiftSites
-                      is perfect for you!
-                  </i>
-              </div>
-              <div class="card">
-                  <img src="https://image.flaticon.com/icons/svg/236/236832.svg">
-                  <h3>Mason B</h3>
-                  <span>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                  </span>
-                  <i>
-                      SwiftSites made me a great looking website in no time!
-                      If you are looking for a modern stylish website, SwiftSites
-                      is perfect for you!
-                  </i>
-              </div>
-              <div class="card">
-                  <img src="https://image.flaticon.com/icons/svg/234/234695.svg">
-                  <h3>June C</h3>
-                  <span>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                      <i class="material-icons">star</i>
-                  </span>
-                  <i>
-                      SwiftSites made me a great looking website in no time!
-                      If you are looking for a modern stylish website, SwiftSites
-                      is perfect for you!
-                  </i>
-              </div>
+        <h2>People like what we do</h2>
+        <div class="flex">
+          <div class="card">
+            <img src="https://image.flaticon.com/icons/svg/234/234679.svg">
+            <h3>James K</h3>
+            <span>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </span>
+            <i>
+              SwiftSites was fast and easy. I got unlimited changes for
+              for my website after it was finished. Next time I need a
+              website, I'm going to use SwiftSites :D
+            </i>
           </div>
+          <div class="card">
+            <img src="https://image.flaticon.com/icons/svg/236/236832.svg">
+            <h3>Mason B</h3>
+            <span>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </span>
+            <i>
+              SwiftSites made me a great looking website in no time!
+              If you are looking for a modern stylish website, SwiftSites
+              is perfect for you!
+            </i>
+          </div>
+          <div class="card">
+            <img src="https://image.flaticon.com/icons/svg/234/234695.svg">
+            <h3>June C</h3>
+            <span>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+              <i class="material-icons">star</i>
+            </span>
+            <i>
+              SwiftSites made me an awesome website in no time!
+              I didn't have to do anything, but tell them what I
+              wanted. Five Stars.
+            </i>
+          </div>
+        </div>
       </section>
       <section>
           <a name="pricing"></a>
@@ -231,7 +231,7 @@
                   </div>
                   <div class="footer">
                       From $45
-                      <a href="#calc">Calculate Price</a>
+                      <a href="/pricing.html">Calculate Price</a>
                   </div>
               </div>
               <div class="card-2">
@@ -243,82 +243,12 @@
                   </div>
                   <div class="footer">
                       From $90
-                      <a href="#calc">Calculate Price</a>
+                      <a href="/pricing.html">Calculate Price</a>
                   </div>
               </div>
           </div>
       </section>
       <section>
-          <a name="calc"></a>
-          <h2>Estimate website cost</h2>
-          <form>
-              <h3 class="label">Choose a site style</h3>
-              <select id="theme" onchange="updatePagePrice()">
-                  <option value="custom">Custom</option>
-                  <option disabled>&mdash;</option>
-                  <option value="burst">Burst</option>
-                  <option value="flow">Flow</option>
-                  <option value="gloss">Gloss</option>
-                  <option value="mercury">Mercury</option>
-                  <option value="raspberry">Raspberry</option>
-                  <option value="rust">Rust</option>
-                  <option value="drop">Drop</option>
-                  <option value="minecraft">Minecraft</option>
-              </select>
-              <h4 class="helper">Select 'Custom' if you want a custom site</h4>
-              <h3 class="label"><input type="checkbox" name="branding" onclick="updatePagePrice()"></input> Remove SwiftSites branding <sup>Add $5</sup></h3>
-             <h3 class="label"><input type="checkbox" name="email" onclick="updatePagePrice()"></input> Add RainLoop email <sup>Add $10</sup></h3>
-             <h3 class="label"><input type="checkbox" name="ssl" onclick="updatePagePrice()"></input> Add SSL certificate <sup>Add $5</sup></h3>
-             <h3 class="label">Amount of pages</h3>
-             <input type="number" min="1" max="100" required name="pagecnt" value="3" oninput="updatePagePrice()"></input>
-             <h4 class="helper">First 3 pages are included, add $5 for each additional page</h4>
-             <br>
-             <script>
-             function updatePagePrice() {
-                 var price = 0;
-                 if (document.getElementsByName("branding")[0].checked) {price += 5};
-                 if (document.getElementsByName("email")[0].checked) {price += 10};
-                 if (document.getElementsByName("ssl")[0].checked) {price += 5};
-                 switch (document.getElementById("theme").value) {
-                    case "burst":
-                    price += 45;
-                    break;
-                    case "flow":
-                       price += 60;
-                       break;
-                    case "rust":
-                       price += 80;
-                       break;
-                    case "gloss":
-                       price += 65;
-                       break;
-                    case "raspberry":
-                       price += 75;
-                       break;
-                    case "mercury":
-                       price += 45;
-                       break;
-                    case "custom":
-                       price += 90;
-                       break;
-                    case "drop":
-                       price += 85;
-                       break;
-                   case "minecraft":
-                        price += 85;
-                     break;
-                   default:
-                        break;
-                 }
-                 var pageCost = (parseInt(document.getElementsByName("pagecnt")[0].value) - 3) * 5
-                 if (pageCost > 0) {price += pageCost};
-                 document.getElementById("price").innerHTML = price;
-             }
-             </script>
-             <a class="button" onclick="updatePagePrice()">Update Price</a>
-             <h2>Estimated Total<br>$<span id="price">0</span></h2>
-          </form>
-          <br>
           <h1>Ready to make your site something great?</h1>
           <h3>Get in touch with us and we'll work with you to get the best website.</h3>
           <p>
