@@ -1,275 +1,93 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SwiftSites - Modern, handcrafted websites</title>
-    <link rel="stylesheet" href="./assets/css/new.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="icon" href="./assets/images/logo.png" type="image/png" sizes="16x16 32x32">
+    <title>SwiftSites • Green Theme</title>
+    <!-- Meta -->
     <meta charset="UTF-8">
-    <meta name="description" content="Creating modern, hand-made websites that help bring messages to your customers.">
-    <meta name="keywords" content="HTML,CSS,website,JavaScript,store,build,homepage">
+    <meta http-equiv="Content-Type" content="text/html; charse=UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
     <meta name="author" content="SwiftSites">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
-    <script src="https://unpkg.com/sweetalert2@7.3.4/dist/sweetalert2.all.js"></script>
-    <script>
-    var img = function (url) {
-      swal({
-        width: '800px',
-        imageUrl: url,
-        imageAlt: 'url'
-      });
-    }
-    </script>
+    <meta name="description" content="The Green theme by SwiftSites.">
+    <meta name="keywords" content="swiftsites,theme,free,green,template,assets">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/png">
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+    <script src="./assets/js/scripts.js"></script>
+    <!--  Import Animate.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Import FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous  ">
+    <!-- Import Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
+
   <body>
-      <a name="top"></a>
-      <nav>
-          <span>SwiftSites</span>
-          <span class="right">
-              <a href="about.html">About</a>
-              <a href="#pricing">Pricing</a>
-              <a href="#themes">Themes</a>
-              <a href="#pricing" class="button">Get Started</a>
-          </span>
-      </nav>
-      <div class="banner">
-          Get <b>$15 off</b> website themes with the <b>SwiftSites winter sale</b>!
-      </div>
-      <header>
-          <div class="content">
-              <h2 title>SwiftSites</h2>
-              <h1>Crafting modern, hand-made websites</h1>
-              <h4 title style="margin-top:0">Tell your customers something</h4>
-              <br>
-              <a class="button" href="#pricing">Get Started</a>
-          </div>
-      </header>
-      <section>
-          <h1>Make your site something more</h1>
-          <h3>We offer a range of website themes and custom site designs for any type of site</h3>
-      </section>
-      <!-- Themes -->
-      <section>
-          <a name="themes"></a>
-          <h2>Lots of customizable themes</h2>
-          <div class="flex">
-              <div class="card-2">
-                  <div class="title large" style="background:url(assets/images/rust.jpg) no-repeat center center;background-size:cover;">
-                      Rust
-                  </div>
-                  <div class="content">
-                      A more traditional website theme, better for websites with any amount of text.
-                      Easily integrate articles and forms into your site.
-                  </div>
-                  <div class="footer">
-                      <s>$80</s>
-                      <b>$65</b>
-                      <a href="javascript:img('./assets/images/Rust-0.png')">Preview</a>
-                  </div>
-              </div>
-              <div class="card-2">
-                  <div class="title large" style="background:url(assets/images/flow.jpg) no-repeat center center;background-size:cover;">
-                      Flow
-                  </div>
-                  <div class="content">
-                      A simplistic, material website design, specially for blogs.
-                      Feature important subjects on your site with resizable cards.
-                  </div>
-                  <div class="footer">
-                      <s>$60</s>
-                      <b>$45</b>
-                      <a href="javascript:img('./assets/images/Flow-0.jpg')">Preview</a>
-                  </div>
-              </div>
-              <div class="card-2">
-                  <div class="title large" style="background:linear-gradient(135deg, #ff6600, #ff0066);">
-                      Burst
-                  </div>
-                  <div class="content">
-                      A minimalist web design theme that works well with sites that don't need a lot of content on them.
-                  </div>
-                  <div class="footer">
-                      <s>$55</s>
-                      <b>$40</b>
-                      <a href="javascript:img('./assets/images/Burst.png')">Preview</a>
-                  </div>
-              </div>
-          </div>
-          <div class="flex">
-              <div class="card-2">
-                  <div class="title large" style="background:url(assets/images/gloss.jpg) no-repeat top center;background-size:cover;">
-                      Gloss
-                  </div>
-                  <div class="content">
-                      A general theme with lots of lines and angles.
-                      Good for use with any type of website, with lots of spaces for available content.
-                  </div>
-                  <div class="footer">
-                      <s>$65</s>
-                      <b>$50</b>
-                      <a href="javascript:img('./assets/images/Gloss-0.png')">Preview</a>
-                  </div>
-              </div>
-              <div class="card-2">
-                  <div class="title large" style="background:url(assets/images/raspberry.jpg) no-repeat center center;background-size:cover;">
-                      Raspberry
-                  </div>
-                  <div class="content">
-                      A colorful theme that showcases bright colors with a central space for content.
-                      This theme is mainly for blogs, but works well with any kind of site.
-                  </div>
-                  <div class="footer">
-                      <s>$55</s>
-                      <b>$40</b>
-                      <a href="javascript:img('./assets/images/Raspberry.png')">Preview</a>
-                  </div>
-              </div>
-              <div class="card-2">
-                  <div class="title large" style="background:url(assets/images/mercury.jpg) no-repeat center center;background-size:cover;">
-                      Mercury
-                  </div>
-                  <div class="content">
-                      A bright, minimalist web design theme that showcases three cards with a picture and topic on them.
-                      This design works well for landing pages.
-                  </div>
-                  <div class="footer">
-                      <s>$45</s>
-                      <b>$30</b>
-                      <a href="javascript:img('./assets/images/Mercury.png')">Preview</a>
-                  </div>
-              </div>
-          </div>
-    <div class="flex">
-              <div class="card-2">
-                  <div class="title large" style="background:url('assets/images/drop.jpg') no-repeat center center;background-size:cover;">
-                      Drop
-                  </div>
-                  <div class="content">
-                      An infinetely customizable theme made with Bootstrap
-                      Good for use with any type of website, with lots of spaces for available content.
-                  </div>
-                  <div class="footer">
-                      <s>$85</s>
-                      <b>$70</b>
-                      <a href="javascript:img('./assets/images/Drop-0.png')">Preview</a>
-                  </div>
-              </div>
-              <div class="card-2">
-                  <div class="title large" style="background:url(assets/images/minecraft.jpg) no-repeat center center;background-size:cover;">
-                      Minecraft
-                  </div>
-                  <div class="content">
-                      A Minecraft theme for your server site.
-                      Good for all Minecraft sites, mostly for servers.
-                  </div>
-                  <div class="footer">
-                      <s>$85</s>
-                      <b>$70</b>
-                      <a href="javascript:img('./assets/images/MineCraft-0.png')">Preview</a>
-                  </div>
-              </div>
-          </div>
-          <h5><i><b>*</b>Payments accepted in USD, Bitcoin, and Etherium. When paying with cryptocurrencies, a 5% service charge will be added to your bill.</i></h5>
-      </section>
-      <!-- Reviews -->
-      <section>
-        <h2>People like what we do</h2>
-        <div class="flex">
-          <div class="card">
-            <img src="https://image.flaticon.com/icons/svg/234/234679.svg">
-            <h3>James K</h3>
-            <span>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-            </span>
-            <i>
-              SwiftSites was fast and easy. I got unlimited changes for
-              for my website after it was finished. Next time I need a
-              website, I'm going to use SwiftSites :D
-            </i>
-          </div>
-          <div class="card">
-            <img src="https://image.flaticon.com/icons/svg/236/236832.svg">
-            <h3>Mason B</h3>
-            <span>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-            </span>
-            <i>
-              SwiftSites made me a great looking website in no time!
-              If you are looking for a modern stylish website, SwiftSites
-              is perfect for you!
-            </i>
-          </div>
-          <div class="card">
-            <img src="https://image.flaticon.com/icons/svg/234/234695.svg">
-            <h3>June C</h3>
-            <span>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-              <i class="material-icons">star</i>
-            </span>
-            <i>
-              SwiftSites made me an awesome website in no time!
-              I didn't have to do anything, but tell them what I
-              wanted. Five Stars.
-            </i>
-          </div>
+    <nav id="navbar" class="navbar navbar-inverse navbar-static-top">
+    	<div class="container">
+    		<div class="navbar-header">
+    			<a class="navbar-brand" href="#">SwiftSites Corporation</a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    			<ul class="nav navbar-nav navbar-right">
+    				<li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp;About</a></li>
+    				<li><a href="#"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sample Dropdown<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Dropdown One</a></li>
+                <li><a href="#">Dropdown Two</a></li>
+                <li><a href="#">Dropdown Three&nbsp;<span class="label label-success">New!</span></a></li>
+              </ul>
+            </li>
+    			</ul>
+    		</div>
+    	</div>
+    </nav>
+    <div class="jumbotron" id="jumbotron">
+    	<div class="container">
+    		<h1 id="heading">Cheap. Easy. Fast.</h1>
+    		<div id="paragraph-jumbotron">
+          Are you ready to make your website the <b>best</b>? We have the best site developers and designers on the market, so what are you waiting for? Cheap. Easy. Fast.
         </div>
-      </section>
-      <section>
-          <a name="pricing"></a>
-          <h1>Affordable and fully-featured</h1>
-          <h3>Not satisfied? You can always get your money back.</h3>
-          <div class="flex">
-              <div class="card-2">
-                  <div class="title large" style="background:url(assets/images/theme-site.jpg) no-repeat center center;background-size:cover;">
-                      Website Themes
-                  </div>
-                  <div class="content">
-                      Choose one of our existing themes from above, and we'll create a site for you with the theme of your choice.
-                  </div>
-                  <div class="footer">
-                      From $45
-                      <a href="/pricing.html">Calculate Price</a>
-                  </div>
-              </div>
-              <div class="card-2">
-                  <div class="title large" style="background:url(assets/images/custom-site.jpg) no-repeat center center;background-size:cover;">
-                      Custom Hand-crafted Website
-                  </div>
-                  <div class="content">
-                      We'll custom-design a website for you with any styling that you want. You can customize it and tweak it any way that you want.
-                  </div>
-                  <div class="footer">
-                      From $90
-                      <a href="/pricing.html">Calculate Price</a>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <section>
-          <h1>Ready to make your site something great?</h1>
-          <h3>Get in touch with us and we'll work with you to get the best website.</h3>
-          <p>
-              <a class="button alt-email" href="mailto:support@mail.swiftsites.today">Email</a>
-              <a class="button alt-discord" href="https://discord.gg/HXpYhZb">Discord</a>
-          </p>
-      </section>
-      <footer>
-          <span>Copyright &copy; 2017 SwiftSites</span>
-          <span class="right">
-              <a href="#top">Back to Top</a>
-          </span>
-      </footer>
+    		<br>
+    		<div>
+          <a class="btn button" href="#" role="button" id="button">Learn more »</a>
+        </div>
+    	</div>
+    </div>
+    <div id="container1">
+      <div class="container" id="container">
+      	<div class="row">
+      		<div class="col-md-4">
+      			<i id="bold" class="fa fa-code" aria-hidden="true" style="font-size: 10rem;"></i>
+      			<h3>100% HTML/CSS</h3>
+      			<p id="paragraph">All of our sites are made with only <a id="link" href="#" data-toggle="tooltip" data-placement="top" title="Website building language">HTML/CSS</a>. This makes our sites easily editable, very responsive.</p>
+      		</div>
+          <script>
+          $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();
+          });
+          </script>
+      		<div class="col-md-4">
+      			<i id="bold" class="fa fa-commenting" aria-hidden="true" style="font-size: 10rem;"></i>
+      			<h3>Unlimited Changes</h3>
+      			<p id="paragraph">One of the best things about of SwiftSites, is that we will give you <b>unlimited</b> changes to your site, for no extra fee!</p>
+      		</div>
+      		<div class="col-md-4">
+      			<i id="bold" class="fa fa-signal" aria-hidden="true" style="font-size: 10rem;"></i>
+      			<h3>Proffesional Analytics</h3>
+      			<p id="paragraph">All of our sites come with <a id="link" href="#" data-toggle="tooltip" data-placement="top" title="Google Analytics is a service that lets you measure your site statistics">Google Analytics</a> connected with it. You will be able to connect your google account with the website, and view lots of statistics. </p>
+      		</div>
+      	</div>
+      </div>
+    </div>
+
   </body>
 </html>
