@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   </head>
-  <body>
+  <body onload="updatePagePrice()">
       <a name="top"></a>
       <nav>
           <span>SwiftSites</span>
@@ -23,6 +23,9 @@
               <a href="/#pricing" class="button">Get Started</a>
           </span>
       </nav>
+      <div class="banner">
+          Get <b>$15 off</b> website themes with the <b>SwiftSites winter sale</b>!
+      </div>
       <section>
           <h1>Pricing</h1>
           <form>
@@ -43,7 +46,8 @@
             <h3 class="label"><input type="checkbox" name="branding" onclick="updatePagePrice()"></input> Remove SwiftSites branding <span class="pr">$5</span></h3>
             <h3 class="label"><input type="checkbox" name="email" onclick="updatePagePrice()"></input> Add RainLoop email <span class="pr">$10</span></h3>
             <h3 class="label"><input type="checkbox" name="ssl" onclick="updatePagePrice()"></input> Add SSL certificate <span class="pr">$5</span></h3>
-            <h3 class="label"><input type="checkbox" name="cc" onclick="updatePagePrice()"></input> Pay with CryptoCurrency <span class="pr">~5%</span></h3>
+            <h3 class="label" title="Bitcoin and Ethereum are currently accepted."><input type="checkbox" name="cc" onclick="updatePagePrice()"></input> Pay via cryptocurrency <i class="material-icons">info_outline</i><span class="pr">~5%</span></h3>
+            <h3 class="label" id="sale"><b>Winter Sale</b><span class="pr">-$15</span></h3>
             <h3 class="label">Amount of pages</h3>
             <input type="number" min="1" max="100" required name="pagecnt" value="3" oninput="updatePagePrice()"></input>
             <h4 class="helper">First 3 pages are included, add $5 for each additional page</h4>
@@ -55,33 +59,35 @@
                  if (document.getElementsByName("branding")[0].checked) {price += 5};
                  if (document.getElementsByName("email")[0].checked) {price += 10};
                  if (document.getElementsByName("ssl")[0].checked) {price += 5};
+                 document.getElementById('sale').style.display = 'block';
                  switch (document.getElementById("theme").value) {
                     case "burst":
-                    price += 45;
-                    break;
+                        price += 40;
+                        break;
                     case "flow":
-                       price += 60;
-                       break;
-                    case "rust":
-                       price += 80;
-                       break;
-                    case "gloss":
-                       price += 65;
-                       break;
-                    case "raspberry":
-                       price += 75;
-                       break;
-                    case "mercury":
                        price += 45;
                        break;
+                    case "rust":
+                       price += 65;
+                       break;
+                    case "gloss":
+                       price += 50;
+                       break;
+                    case "raspberry":
+                       price += 40;
+                       break;
+                    case "mercury":
+                       price += 30;
+                       break;
                     case "custom":
+                        document.getElementById('sale').style.display = 'none';
                        price += 90;
                        break;
                     case "drop":
-                       price += 85;
+                       price += 70;
                        break;
                    case "minecraft":
-                        price += 85;
+                        price += 70;
                      break;
                    default:
                         break;

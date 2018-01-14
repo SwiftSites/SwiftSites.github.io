@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 body {
@@ -29,7 +29,7 @@ h2 {
     font-size: 220%;
 }
 
-nav {
+nav, .banner {
     background-color: white;
     color: rgba(0,0,0,.87);
     padding: 15px;
@@ -46,7 +46,13 @@ nav a {
     padding: 10px;
 }
 
-*[title] {
+.material-icons {
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+*[title]:not(.label) {
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -57,6 +63,12 @@ nav a {
     margin-top: 0;
     padding-top: 150px;
     text-align: center;
+}
+
+.banner {
+    text-align: center;
+    background-color: rgb(0,37,41);
+    color: white;
 }
 
 section {
@@ -209,6 +221,8 @@ form {
 
 form .pr {
   float: right;
+  position: relative;
+  top: 2px;
 }
 
 input[type="text"], input[type="url"], input[type=number], textarea {
@@ -254,7 +268,9 @@ h3.label {
 }
 
 h3.label b {
-    color: #f04747;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
 }
 
 h4.helper {
