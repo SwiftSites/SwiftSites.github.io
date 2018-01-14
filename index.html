@@ -32,18 +32,18 @@
     <nav id="navbar" class="navbar navbar-inverse navbar-static-top">
     	<div class="container">
     		<div class="navbar-header">
-    			<a class="navbar-brand" href="#">SwiftSites Corporation</a>
+    			<a class="navbar-brand" href="#">SwiftSites Corporation  </a>
     		</div>
     		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     			<ul class="nav navbar-nav navbar-right">
-    				<li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp;About</a></li>
-    				<li><a href="#"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a></li>
-            <li class="dropdown">
+    				<li id="navbar-item"><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp;About</a></li>
+    				<li id="navbar-item"><a href="#"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Contact</a></li>
+            <li id="navbar-item" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sample Dropdown<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Dropdown One</a></li>
-                <li><a href="#">Dropdown Two</a></li>
-                <li><a href="#">Dropdown Three&nbsp;<span class="label label-success">New!</span></a></li>
+                <li><a style="color: #191919" href="#">Dropdown One</a></li>
+                <li><a style="color: #191919" href="#">Dropdown Two</a></li>
+                <li><a style="color: #191919" href="#">Dropdown Three&nbsp;<span class="label label-success">New!</span></a></li>
               </ul>
             </li>
     			</ul>
@@ -85,6 +85,11 @@
       			<h3>Proffesional Analytics</h3>
       			<p id="paragraph">All of our sites come with <a id="link" href="#" data-toggle="tooltip" data-placement="top" title="Google Analytics is a service that lets you measure your site statistics">Google Analytics</a> connected with it. You will be able to connect your google account with the website, and view lots of statistics. </p>
       		</div>
+          <script>
+          $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();
+          });
+          </script>
       	</div>
       </div>
     </div>
