@@ -8,7 +8,11 @@ body {
 
 header {
     min-height: 700px;
-    background-color: rgb(0, 17, 43);
+    height: 100vh;
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     color: rgba(255,255,255,.87);
 }
 
@@ -198,13 +202,17 @@ a.helper {
 
 
 form {
-    width: 400px;
+    max-width: 500px;
     margin: auto;
     text-align: left;
 }
 
+form .pr {
+  float: right;
+}
+
 input[type="text"], input[type="url"], input[type=number], textarea {
-    width: 400px;
+    width: 100%;
     padding: 8px 0;
     border: none;
     border-bottom: 2px solid rgba(0,0,0,.78);
@@ -234,6 +242,7 @@ select {
     background-color: #f5f5f5;
     outline: none;
     margin: 5px 0;
+    width: 100%;
 }
 
 h3.label {

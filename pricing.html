@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SwiftSites - About Us</title>
+    <link rel="stylesheet" href="./assets/css/new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="icon" href="./assets/images/logo.png" type="image/png" sizes="16x16 32x32">
+    <meta charset="UTF-8">
+    <meta name="description" content="Creating modern, hand-made websites that help bring messages to your customers.">
+    <meta name="keywords" content="HTML,CSS,website,JavaScript,store,build,homepage">
+    <meta name="author" content="SwiftSites">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  </head>
+  <body>
+      <a name="top"></a>
+      <nav>
+          <span>SwiftSites</span>
+          <span class="right">
+              <a href="about.html">About</a>
+              <a href="/#pricing">Pricing</a>
+              <a href="/#themes">Themes</a>
+              <a href="/#pricing" class="button">Get Started</a>
+          </span>
+      </nav>
+      <section>
+          <h1>Pricing</h1>
+          <form>
+            <h3 class="label">Choose a site style</h3>
+            <select id="theme" onchange="updatePagePrice()">
+              <option value="custom" selected>Custom</option>
+              <option disabled>&mdash;</option>
+              <option value="burst">Burst</option>
+              <option value="flow">Flow</option>
+              <option value="gloss">Gloss</option>
+              <option value="mercury">Mercury</option>
+              <option value="raspberry">Raspberry</option>
+              <option value="rust">Rust</option>
+              <option value="drop">Drop</option>
+              <option value="minecraft">Minecraft</option>
+            </select>
+            <h4 class="helper">Select 'Custom' if you want a custom site</h4>
+            <h3 class="label"><input type="checkbox" name="branding" onclick="updatePagePrice()"></input> Remove SwiftSites branding <span class="pr">$5</span></h3>
+            <h3 class="label"><input type="checkbox" name="email" onclick="updatePagePrice()"></input> Add RainLoop email <span class="pr">$10</span></h3>
+            <h3 class="label"><input type="checkbox" name="ssl" onclick="updatePagePrice()"></input> Add SSL certificate <span class="pr">$5</span></h3>
+            <h3 class="label"><input type="checkbox" name="cc" onclick="updatePagePrice()"></input> Pay with CryptoCurrency <span class="pr">~5%</span></h3>
+            <h3 class="label">Amount of pages</h3>
+            <input type="number" min="1" max="100" required name="pagecnt" value="3" oninput="updatePagePrice()"></input>
+            <h4 class="helper">First 3 pages are included, add $5 for each additional page</h4>
+            <h2 class="label">Total: <span class="pr">$<span id="price"></span></span></h2>
+            <br>
+            <script>
+             function updatePagePrice() {
+                 var price = 0;
+                 if (document.getElementsByName("branding")[0].checked) {price += 5};
+                 if (document.getElementsByName("email")[0].checked) {price += 10};
+                 if (document.getElementsByName("ssl")[0].checked) {price += 5};
+                 switch (document.getElementById("theme").value) {
+                    case "burst":
+                    price += 45;
+                    break;
+                    case "flow":
+                       price += 60;
+                       break;
+                    case "rust":
+                       price += 80;
+                       break;
+                    case "gloss":
+                       price += 65;
+                       break;
+                    case "raspberry":
+                       price += 75;
+                       break;
+                    case "mercury":
+                       price += 45;
+                       break;
+                    case "custom":
+                       price += 90;
+                       break;
+                    case "drop":
+                       price += 85;
+                       break;
+                   case "minecraft":
+                        price += 85;
+                     break;
+                   default:
+                        break;
+                 }
+                 var pageCost = (parseInt(document.getElementsByName("pagecnt")[0].value) - 3) * 5
+                 if (pageCost > 0) {price += pageCost};
+                 if (document.getElementsByName("cc")[0].checked) {price += (price/100)*5};
+                 document.getElementById("price").innerHTML = Math.ceil(price);
+             }
+             </script>
+          </form>
+      </section>
+
+      <section>
+          <br>
+          <h1>Ready to make your site something great?</h1>
+          <h3>Get in touch with us and we'll work with you to get the best website.</h3>
+          <p>
+              <a class="button alt-email" href="mailto:support@mail.swiftsites.today">Email</a>
+              <a class="button alt-discord" href="">Discord</a>
+          </p>
+      </section>
+      <footer>
+          <span>Copyright &copy; 2017 SwiftSites</span>
+          <span class="right">
+              <a href="#top">Back to Top</a>
+          </span>
+      </footer>
+  </body>
+</html>
