@@ -194,6 +194,7 @@ h5 b {
     float: right;
     padding-left: 10px;
     text-decoration: none;
+    outline: none;
 }
 
 a.helper {
