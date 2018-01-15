@@ -26,6 +26,10 @@ body, html, #container1 {
   border-bottom: 4px white solid;
   margin: 35px 0px;
 }
+#myCarousel {
+  width: 70%;
+  margin: auto;
+}
 #invert {
   color: #F9F9F9;
 }
