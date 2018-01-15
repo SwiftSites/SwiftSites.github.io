@@ -196,6 +196,78 @@ b {
   text-align: center;
   color: #F9F9F9;
 }
+.footer{
+	background-color: rgb(0, 126, 185);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer .footer-left p{
+	color:  #ffffff;
+	font-size: 14px;
+	margin: 0;
+}
+.footer p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+.footer p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+.footer .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #0388c7;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+.footer-right a:hover {
+	background-color:  #0373a9;
+  transition: all ease 0.5s;
+}
+.footer-right a:not(hover) {
+  transition: all ease 0.5s;
+}
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
 @media screen and (max-width: 555px) {
    #jumbotron {
      background-size: 100% 100%;
