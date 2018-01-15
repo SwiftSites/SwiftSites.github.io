@@ -41,7 +41,7 @@
             <li id="navbar-item" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a style="color: #191919" href="#">Templates</a></li>
+                <li><a style="color: #191919" href="#inverted">Templates</a></li>
                 <li><a style="color: #191919" href="#">Custom Site&nbsp;&nbsp;<span style="vertical-align:middle;" class="label label-danger">Hot!</span></a></li>
                 <li><a style="color: #191919" href="#">Wordpress Site</a></li>
                 <li><a style="color: #191919" href="#">Company Package&nbsp;&nbsp;<span style="vertical-align:middle;" class="label label-success">New!</span></a></li>
@@ -96,7 +96,9 @@
     </div>
     <div id="inverted">
       <div class="container" id="container">
-        <h1 id="h1">Lots of Customizable Templates:</h1>
+        <div class="jumbotron" style="background: none; padding: 0px;  margin: 0px;">
+          <h1 id="h1">Customizable Templates</h1>
+        </div>
         <hr id="hr">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
@@ -157,6 +159,34 @@
         </div>
       </div>
     </div>
-
+    <div id="container1">
+      <div class="container" id="container">
+        <div class="jumbotron" style="background: none; padding: 0px;  margin: 0px;">
+          <h1 id="h1" style="color: rgb(0, 126, 185)">Custom Sites</h1>
+        </div>
+        <center>
+          <hr id="hr" style="width: 80%; border-color: rgb(0, 126, 185)">
+        </center>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <img id="computer" src="assets/images/computer.png" alt="computer"/>
+          </div>
+          <div class="col-md-6">
+            <h2 style="color: rgb(0, 126, 185);" style="text-align:left">Custom sites tailored for your needs</h2>
+            <p id="paragraph1">
+              Custom sites are made by us based on what you want in your site. We chat with you while we are developing the site, constantly sending you screenshots and tweaking it based on your needs. Custom sites come with free hosting, and its content can be changed unlimitely. We connect Google Analytics, and your preffered domain to the website free with this option.
+              <br>
+              <center><a style="margin:auto;" class="btn button" href="pricing.html" role="button" id="button-invert">Learn more »</a></center>
+            </p>
+          </div>
+          <script>
+          $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();
+          });
+          </script>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

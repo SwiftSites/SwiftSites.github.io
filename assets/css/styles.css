@@ -16,7 +16,6 @@ body, html, #container1 {
 }
 #h1 {
   font-family: "Montserrat";
-  font-size: 5rem;
   font-weight: 700;
   color: white;
   text-align: center;
@@ -102,6 +101,21 @@ body, html, #container1 {
   color: rgb(0, 126, 185);
   box-shadow: 0 0 10px rgba(0,0,0,.12), 0 10px 10px rgba(0,0,0,.24);
 }
+#button-invert {
+  opacity: 0.8;
+  border: 3px rgb(0, 126, 185) solid;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+#button-invert:hover, #button-invert:not(hover) {
+  transition: all ease 0.5s;
+}
+#button-invert:hover {
+  background-color: rgb(0, 126, 185);
+  color: white;
+  box-shadow: 0 0 10px lightgray, 0 10px 10px lightgray;
+}
 #navbar {
   background-color: #F9F9F9;
   margin: 0px;
@@ -147,6 +161,13 @@ body, html, #container1 {
   font-size: 18px;
   color: #191919;
 }
+#paragraph1 {
+  font-weight: 300;
+  font-family: Roboto;
+  font-size: 18px;
+  color: #191919;
+  text-align: left;
+}
 #paragraph-invert {
   font-weight: 300;
   font-family: Roboto;
@@ -179,4 +200,17 @@ b {
    #jumbotron {
      background-size: 100% 100%;
    }
+}
+@media screen and (max-width: 992px) {
+    .col-md-6 {
+       width: 70%;
+       margin: auto;
+       text-align: center;
+    }
+    #computer {
+       width: 60%;
+    }
+    #paragraph1 {
+      text-align: center;
+    }
 }
