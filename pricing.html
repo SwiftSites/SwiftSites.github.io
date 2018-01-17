@@ -47,6 +47,7 @@
             <h3 class="label"><input type="checkbox" name="branding" onclick="updatePagePrice()"></input> Remove SwiftSites branding <span class="pr">$5</span></h3>
             <h3 class="label"><input type="checkbox" name="email" onclick="updatePagePrice()"></input> Add RainLoop email <span class="pr">$10</span></h3>
             <h3 class="label"><input type="checkbox" name="ssl" onclick="updatePagePrice()"></input> Add SSL certificate <span class="pr">$5</span></h3>
+            <h3 class="label"><input type="checkbox" name="wp" onclick="updatePagePrice()"></input> Make Site Wordpress <span class="pr">$25</span></h3>
             <h3 class="label" title="Bitcoin and Ethereum are currently accepted."><input type="checkbox" name="cc" onclick="updatePagePrice()"></input> Pay via cryptocurrency <i class="material-icons">info_outline</i><span class="pr">~5%</span></h3>
             <h3 class="label" id="sale"><b>Winter Sale</b><span class="pr">-$15</span></h3>
             <h3 class="label">Amount of pages</h3>
@@ -60,6 +61,7 @@
                  if (document.getElementsByName("branding")[0].checked) {price += 5};
                  if (document.getElementsByName("email")[0].checked) {price += 10};
                  if (document.getElementsByName("ssl")[0].checked) {price += 5};
+                 if (document.getElementsByName("wp")[0].checked) {price += 25};
                  document.getElementById('sale').style.display = 'block';
                  switch (document.getElementById("theme").value) {
                     case "burst":
